@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main-container">
+        <h1 class="heading">Quiz App</h1>
+        <button id="start-btn" class="btn start-btn">Start Quiz</button>
+    </div>
+    <div id="quiz-container" class="hidden">
+        <div id="timer">Time Left: <span id="time-left">10</span>s</div>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="quiz">
+            <div id="question-container">
+                <div class="question-wrapper">
+                    <div class="number">
+                        Question <span class="current">1</span> <span class="total">/5</span>
+                    </div>
+                    <div class="question" id="question">This is a question?</div>
+                </div>
+            </div>
+            <div id="answer-buttons" class="answer-wrapper"></div>
+        </div>
+        <div id="controls">
+            <button id="submit-btn" class="btn submit-btn hidden">Submit Answer</button>
+            <button id="next-btn" class="btn next-btn hidden">Next Question</button>
+        </div>
+    </div>
+    <div id="result-container" class="hidden">
+        <h1>Result</h1>
+        <p id="final-score"></p>
+        <button id="restart-btn" class="btn">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
